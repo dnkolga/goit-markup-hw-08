@@ -1,0 +1,26 @@
+.logo {
+    display: inline-block;
+    color: $accent-color;
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+}
+.header__logo {
+    @extend .logo ;
+    margin-right: 93px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &--span {
+        color: $primary-text-color;
+    }
+}
+
+.footer__logo {
+    @extend .logo;
+    margin-bottom: 20px;
+
+    &--span {
+        color: $accent-color-white;
+    }
+}

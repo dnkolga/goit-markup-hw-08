@@ -1,0 +1,32 @@
+.area {
+    @extend .section;
+
+    &__box {
+        @extend .container;
+    }
+    &__title {
+        @extend .second-title;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrap {
+        position: relative;
+        display: flex;
+    }
+    &__text {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        padding-top: 27px;
+        padding-bottom: 27px;
+
+        background-color: rgba(18, 19, 23, .8);
+        color: $accent-color-white;
+        text-transform: uppercase;
+        @include font (14px, 700);
+    }
+}

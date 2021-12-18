@@ -1,0 +1,17 @@
+@import "./utilites/normalize";
+@import "./vars/vars";
+@import "./utilites/min-styles";
+@import "./vars/placeholders_mixins";
+
+@import "./common/common";
+@import "./common/header";
+@import "./common/logo";
+
+@import "./page-main/hero";
+@import "./page-main/advantages";
+@import "./page-main/area";
+@import "./page-main/team";
+@import "./page-main/clients";
+@import "./page-main/modal";
+
+@import "./common/footer"

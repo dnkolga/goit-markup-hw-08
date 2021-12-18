@@ -1,0 +1,12 @@
+@import "./utilites/normalize";
+@import "./vars/vars";
+@import "./utilites/min-styles";
+@import "./vars/placeholders_mixins";
+
+@import "./common/common";
+@import "./common/header";
+@import "./common/logo";
+
+@import "./page-portfolio/portfolio";
+
+@import "./common/footer"

@@ -1,0 +1,12 @@
+%CenterFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font ($fs, $fw: 400, $lh: 1.2, $ls: 0.03em) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
