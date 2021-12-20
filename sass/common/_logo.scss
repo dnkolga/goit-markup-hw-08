@@ -2,8 +2,12 @@
     display: inline-block;
     color: $accent-color;
     font-family: 'Raleway';
-    font-size: 26px;
     font-weight: 700;
+    font-size: 24px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+    }
 }
 .header__logo {
     @extend .logo ;
@@ -17,6 +21,7 @@
 }
 
 .footer__logo {
+    display: block;
     @extend .logo;
     margin-bottom: 20px;
 

@@ -9,10 +9,10 @@
     &__item {
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    // &__list {
+    //     // display: flex;
+    //     // flex-wrap: wrap;
+    // }
     &__wrap {
         position: relative;
         overflow: hidden;
@@ -38,8 +38,8 @@
 }
 .portfolio__menu {
     &--list {
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
         margin-bottom: 50px;
     }
     &--item:not(:last-child) {

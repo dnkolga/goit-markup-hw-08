@@ -1,9 +1,11 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+
+    width: 100%;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -14,16 +16,30 @@
     background-position: center;
     background-color: $gray-bg-color;
 
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
+    }
+
     &__box {
         @extend .container;
     }
 
     &__title {
+
+        @include font (26px, 900, 1.6, 0.06em);
         color: $accent-color-white;
-        @include font (44px, 900, 1.36);
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 30px;
+
+        @media screen and (min-width:1200px) {
+            @include font (44px, 900, 1.36, 0.06em);
+        }
     }
     &__btn {
         @extend .btn;

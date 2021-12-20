@@ -7,24 +7,35 @@ body {
     letter-spacing: 0.03em;
 }
 .container {
-    width: 1200px;
+
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+
+    @media screen and (min-width: $mobile) {
+        width: 480px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 768px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 1200px;
+    }
 }
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media  screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 }
 .current {
     color: $accent-color;
-}
-.logo {
-    color: $accent-color;
-    font-family: 'Raleway';
-    font-size: 26px;
-    font-weight: 700;
 }
 .btn {
     border-radius: 4px;
@@ -36,8 +47,13 @@ body {
 
 .second-title {
     text-align: center;
-    @include font (36px, 700, 1.16);
-    margin-bottom: 50px;
+    @include font (28px, 700, 1.14);
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+        @include font (36px, 700, 1.16);
+        margin-bottom: 50px;
+    }
 }
 
 .visually-hidden {

@@ -1,20 +1,21 @@
 .header{
+
     @extend .current;
     background-color: $accent-color-white;
     border-bottom: $head-border-color 1px solid;
-    padding-top: 14px;
-    padding-bottom: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
-    &__nav--list,
-    &__nav--contacts {
-        display: flex;
-}
+//     &__nav--list,
+//     &__nav--contacts {
+//         // display: flex;
+// }
 
     &__box {
         @extend .container;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
         // margin-bottom: 13px;
     }
 
@@ -32,11 +33,15 @@
         &:focus {
             color: $accent-color;
     }
+
+    &__mobile--menu--icon {
+        position: absolute;
+    }
 }
 }
 .header__nav {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 
     &--item:not(:last-child) {
         margin-right: 50px;
@@ -61,15 +66,15 @@
 
 }
 .header__contacts {
-    display: flex;
+    // display: flex;
     
     &--item:not(:last-child) {
         margin-right: 50px;
     }
     &--link {
         color: $secondary-text-color;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     }
     &--icon {
         margin-right: 10px;
@@ -84,3 +89,4 @@
     }
 
 }
+
