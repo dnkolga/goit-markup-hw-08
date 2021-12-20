@@ -17,14 +17,16 @@
     <!--Шапка документа-->
     <header class="header">
       <div class="header__box">
-        <a href="./index.html" class="header__logo"
+        <nav class="header__nav">
+          <a href="./index.html" class="header__logo"
             >Web<span class="header__logo--span">Studio</span>
           </a>
-          <svg class="header__mobile--menu--icon" width="40" height="40">
-            <use class="open" href="./images/icons.svg#menu" > </use>
-            <use class="close" href="./images/icons.svg#close_menu" >  </use>
-          </svg>
-        <nav class="header__nav">
+          <button type="button" class="header__menu--btn is-open"mob-menu>
+            <svg class="header__menu--icon" width="40" height="40">
+              <use class="" href="./images/icons.svg#menu" > </use>
+              <use class="" href="./images/icons.svg#close_menu" >  </use>
+            </svg>
+          </button>
           <ul class="header__nav--list">
             <li class="header__nav--item">
               <a href="./index.html" class="header__nav--link header__nav--current">Студия</a>
@@ -533,5 +535,6 @@
     </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

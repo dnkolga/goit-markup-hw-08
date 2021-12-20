@@ -7,6 +7,10 @@
     &__hidden-title {
         @extend .visually-hidden
     }
+    &__title, &__text {
+        @include font (14px, 400, 1.7);
+        
+    }
     &__title {
         font-weight: 700;
         text-transform: uppercase;
@@ -15,10 +19,6 @@
     }
     &__list {
         margin-bottom: -30px;
-    }
-    &__title, &__text {
-        @include font (14px, 400, 1.7);
-        
     }
     // &__list {
     //     // display: flex;

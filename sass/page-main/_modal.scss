@@ -12,11 +12,18 @@
 .modal {
     position: absolute;
     padding: 40px;
-    width: 528px;
+    width: 100%;
     min-height: 581px;
     top: 50%;
     left: 50%;
     border-radius: 4px;
+
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 528px;
+    }
 
     transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -24,9 +31,13 @@
     background-color: $primary-bg-color;
 
     &__title {
-        @include font (20px, 700, 1.15);
+        @include font (20px, 700, 1.5);
         text-align: center;
         margin-bottom: 12px;
+
+        @media screen and (min-width: $desktop) {
+            @include font (20px, 700, 1.15);
+        }
     }
     &__close {
         top: 8px;
@@ -53,10 +64,6 @@
 }
 
 .form {
-    // &__box, &__list, &__client, &__comment {
-    //     // display: flex;
-    //     // flex-direction: column;
-    // }
     &__list {
         margin-bottom: 20px;
         
@@ -131,11 +138,15 @@
         }
 
         &--label {
-            @include font (14px, 400, 1.7);
+            @include font (12px, 400, 1.16);
             color: $secondary-text-color;
-            // display: flex;
-            // align-items: center;
+            display: flex;
+            align-items: center;
             cursor: pointer;
+
+            @media screen and (min-width: $desktop) {
+                @include font (14px, 400, 1.7);
+            }
         }
         &--span {
             width: 16px;

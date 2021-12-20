@@ -6,13 +6,20 @@
     padding-top: 16px;
     padding-bottom: 16px;
 
-//     &__nav--list,
-//     &__nav--contacts {
-//         // display: flex;
-// }
+    @media screen and (min-width: $tablet){
+        &__nav--list,
+        &__nav--contacts {
+            display: flex;
+    }
+    }
+
+
 
     &__box {
         @extend .container;
+        position: relative;
+
+        
         // display: flex;
         // align-items: center;
         // justify-content: space-between;
@@ -32,10 +39,22 @@
         &:focus,
         &:focus {
             color: $accent-color;
-    }
+    }   
+}
 
-    &__mobile--menu--icon {
-        position: absolute;
+&__menu--btn {
+    position: absolute;
+    top: 22px;
+    right: 0;
+
+    & .close {
+        display: none;
+    }
+    &.is-open .close {
+        display: block;
+    }
+    &.is-open .open {
+        display: none;
     }
 }
 }
@@ -68,9 +87,9 @@
 .header__contacts {
     // display: flex;
     
-    &--item:not(:last-child) {
-        margin-right: 50px;
-    }
+    // &--item:not(:last-child) {
+    //     margin-right: 50px;
+    // }
     &--link {
         color: $secondary-text-color;
     // display: flex;
