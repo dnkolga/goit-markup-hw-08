@@ -9,7 +9,6 @@
     @media screen and (min-width: $tablet){
         &__nav--list {
             display: flex;
-            
     }
     }
 
@@ -69,19 +68,21 @@
     &--link {
         color: $primary-text-color;
     }
-    &--current {
-        position: relative
-    }
-    &--current::after {
-        content: "";
-        position: absolute;
-        display: block;
-        height: 4px;
-        width: 100%;
-        bottom: -23.5px;
-        left: 0;
-        border-radius: 2px;
-        background-color: $accent-color;
+    @media screen and (min-width: $tablet) {
+        &--current {
+            position: relative
+        }
+        &--current::after {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 4px;
+            width: 100%;
+            bottom: -23.5px;
+            left: 0;
+            border-radius: 2px;
+            background-color: $accent-color;
+        }
     }
 
 }
