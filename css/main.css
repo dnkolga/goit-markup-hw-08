@@ -284,6 +284,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
@@ -403,7 +405,7 @@ body {
   padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
-  .header__nav--list, .header__nav--contacts {
+  .header__nav--list {
     display: flex;
   }
 }
@@ -415,7 +417,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 13px;
   }
 }
 .header__nav--link, .header__contacts--link {
@@ -445,10 +446,13 @@ body {
   .header__nav {
     display: flex;
     align-items: center;
+    margin-right: auto;
   }
 }
-.header__nav--item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .header__nav--item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .header__nav--link {
   color: #212121;
@@ -462,19 +466,42 @@ body {
   display: block;
   height: 4px;
   width: 100%;
-  bottom: -20px;
+  bottom: -23.5px;
   left: 0;
   border-radius: 2px;
   background-color: #2196F3;
 }
 
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    display: flex;
+  }
+}
 @media screen and (min-width: 768px) {
   .header__contacts--item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts--item:not(:last-child) {
+    margin-bottom: 0;
     margin-right: 50px;
   }
 }
 .header__contacts--link {
   color: #757575;
+}
+@media screen and (min-width: 768px) {
+  .header__contacts--link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts--link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .header__contacts--icon {
   margin-right: 10px;
@@ -499,9 +526,13 @@ body {
 }
 
 .header__logo {
-  margin-right: 93px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
 }
 .header__logo--span {
   color: #212121;
@@ -569,6 +600,7 @@ body {
 }
 
 .advantages__title, .advantages__text {
+  width: 100%;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
@@ -580,12 +612,35 @@ body {
   text-align: center;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .advantages__title {
+    text-align: left;
+  }
+}
 .advantages__list {
   margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .advantages__item {
   width: 100%;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    width: calc(100% / 4 - 30px);
+  }
 }
 .advantages__wrap {
   width: 100%;
@@ -631,12 +686,35 @@ body {
 .team__list {
   margin-bottom: -30px;
 }
+@media screen and (min-width: 768px) {
+  .team__list {
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .team__item {
   background-color: #fff;
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc(100% / 4 - 30px);
+    margin: 15px;
+  }
 }
 .team__text-box {
   padding-top: 30px;
@@ -945,9 +1023,15 @@ body {
   padding-top: 60px;
   padding-bottom: 57px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer__box {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
     justify-content: space-between;
     align-items: baseline;
   }
@@ -956,6 +1040,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__nav {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__nav {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__nav {
+    align-items: flex-start;
+  }
 }
 .footer__social--title, .footer__form--title {
   color: #FFFFFF;
@@ -966,6 +1065,11 @@ body {
   line-height: 0.87;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__social--title, .footer__form--title {
+    text-align: left;
+  }
 }
 .footer__contacts, .footer__social {
   margin-bottom: 60px;
@@ -980,6 +1084,11 @@ body {
   text-align: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .footer__contacts--item {
+    text-align: left;
+  }
+}
 .footer__contacts--item:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -987,9 +1096,24 @@ body {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__social {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    width: 25%;
+  }
+}
 .footer__social--list, .footer__social--item, .footer__social--link {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__social--list {
+    justify-content: flex-start;
+  }
 }
 .footer__social--item {
   width: 44px;
@@ -1015,6 +1139,16 @@ body {
   fill: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__form {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    width: 570px;
+  }
+}
 .footer__form input {
   padding: 15px 0 15px 16px;
   margin-bottom: 20px;
@@ -1025,6 +1159,12 @@ body {
   outline: none;
   color: #FFFFFF;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .footer__form input {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 .footer__form input:focus {
   border: solid 1px #2196F3;
@@ -1072,6 +1212,12 @@ body {
   min-height: 50px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer__form--btn {
+    margin: 0;
+    display: inline;
+  }
 }
 .footer__form--btn--icon {
   fill: #FFFFFF;

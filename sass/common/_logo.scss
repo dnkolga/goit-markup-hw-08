@@ -11,9 +11,12 @@
 }
 .header__logo {
     @extend .logo ;
-    margin-right: 93px;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 88px;
+    }
 
     &--span {
         color: $primary-text-color;
