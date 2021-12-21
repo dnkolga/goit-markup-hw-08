@@ -153,6 +153,9 @@
     top: 0;
     right: 0;
     padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     transform: translateX(100%);
     opacity: .1;
@@ -165,7 +168,7 @@
 
 
     &--nav {
-        margin-bottom: 300px;
+        margin-bottom: auto;
     }
     &--nav .item {
         @include font (40px, 500, 1.15, 0.02em);

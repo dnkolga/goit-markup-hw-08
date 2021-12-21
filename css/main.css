@@ -534,6 +534,9 @@ body {
   top: 0;
   right: 0;
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transform: translateX(100%);
   opacity: 0.1;
   transition: all 500ms linear;
@@ -548,7 +551,7 @@ body {
   opacity: 1;
 }
 .header__mobile-menu--nav {
-  margin-bottom: 300px;
+  margin-bottom: auto;
 }
 .header__mobile-menu--nav .item {
   font-size: 40px;
