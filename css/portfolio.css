@@ -553,6 +553,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
   transform: translateX(100%);
   opacity: 0.1;
   transition: all 500ms linear;
