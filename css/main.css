@@ -577,6 +577,14 @@ body {
   color: #2196F3;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 380px) {
+  .header__mobile-menu--contacts .item:first-child {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
 .header__mobile-menu--contacts .item:first-child:hover, .header__mobile-menu--contacts .item:first-child:focus {
   text-decoration: underline;
 }
@@ -587,6 +595,14 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   margin-bottom: 64px;
+}
+@media screen and (max-width: 380px) {
+  .header__mobile-menu--contacts .item:last-child {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
 }
 .header__mobile-menu--contacts .item:last-child:hover, .header__mobile-menu--contacts .item:last-child:focus {
   text-decoration: underline;

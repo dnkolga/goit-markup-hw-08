@@ -192,6 +192,10 @@
         color: $accent-color;
         margin-bottom: 32px;
 
+        @media screen and (max-width: 380px) {
+            @include font (24px, 500, 1.17, 0.02em);
+        }
+
         &:hover, &:focus {
             text-decoration: underline;
         }
@@ -200,6 +204,10 @@
         @include font (24px, 500, 1.16, 0.02em);
         color: $secondary-text-color;
         margin-bottom: 64px;
+
+        @media screen and (max-width: 380px) {
+            @include font (20px, 500, 1.17, 0.02em);
+        }
 
         &:hover, &:focus {
             text-decoration: underline;
